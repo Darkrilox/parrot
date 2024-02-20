@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/css/connexion.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Automotive.png" alt="">
+        </div>
+        <nav class="main-navigation">
+
+            <div class="menu">
+                <ul>
+                    <li><a href="formulaire.html">Nous contacter</a></li>
+                    <li class="dropdown">
+                        <a href="#">Nos engagement</a>
+                        <div class="dropdown-menu">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Nos engagement</a></li>
+                    <li><a href="index.html">Revenir à l'accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="login-section">
+        <h2>Se Connecter</h2>
+        <form action="/php/login.php" method="post">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Se Connecter">
+        </form>
+    </section>
+    <div class="logov">
+        <img src="/img/logov.png" alt="">
+    </div>
+
+    <footer>
+        <div class="horaire">
+            <h3>Horaires d'ouverture de l'atelier :</h3>
+            <p>Lundi-vendredi: 8:45-12:00, 14:00-18:00</p>
+            <p>Samedi : 8:45-12:00</p>
+            <p>Dimanche : Fermé</p>
+        </div>
+        <div class="separator"></div> <!-- Div pour la séparation -->
+        <div class="avis">
+            <h3>Laissez votre avis</h3>
+            <textarea id="commentaire" placeholder="Votre commentaire"></textarea>
+            <div class="etoiles" id="etoiles">
+                <span class="etoile" data-value="1">&#9733;</span>
+                <span class="etoile" data-value="2">&#9733;</span>
+                <span class="etoile" data-value="3">&#9733;</span>
+                <span class="etoile" data-value="4">&#9733;</span>
+                <span class="etoile" data-value="5">&#9733;</span>
+            </div>
+            <button onclick="soumettreAvis()">Soumettre</button>
+        </div>
+
+    </footer>
+</body>
+
+</html>

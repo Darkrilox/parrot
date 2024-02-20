@@ -1,0 +1,302 @@
+body {
+
+    background: url(/);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+
+/* Styles pour le header */
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+/* Styles pour le logo */
+.logo img {
+    height: 100px;
+    /* Ajustez la hauteur du logo selon vos besoins */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /* Assure que la barre de navigation occupe toute la largeur */
+}
+
+.main-navigation .logo img {
+    height: 40px;
+}
+
+.main-navigation .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.main-navigation .menu ul li:first-child {
+    margin-left: 0;
+}
+
+.main-navigation .menu ul li:last-child {
+    margin-left: auto;
+    /* Pour aligner le bouton de connexion à droite */
+}
+
+.main-navigation .menu ul li:last-child a {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-navigation .menu ul li:last-child a:hover {
+    background-color: #ccc;
+}
+
+
+.main-navigation .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.main-navigation ul li a:hover {
+    color: #007bff;
+    /* Changement de couleur au survol */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+}
+
+.dropdown-menu ul {
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #999;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+
+
+/* Styles pour la section des filtres */
+#filtres {
+    background-color: rgba(0, 0, 0, 0.3);
+    ;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+
+#filtres h2 {
+    margin-bottom: 10px;
+}
+
+#filtres label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#filtres select,
+#filtres input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#filtres button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filtres button:hover {
+    background-color: #45a049;
+}
+
+/* Styles pour la section des résultats */
+#resultats {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+
+#resultats h2 {
+    margin-bottom: 10px;
+}
+
+#resultats ul {
+    list-style: none;
+}
+
+#resultats li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#resultats li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+/* Styles spécifiques pour les ordinateurs de bureau */
+@media screen and (min-width: 768px) {
+
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #filtres {
+        width: 30%;
+    }
+
+    #resultats {
+        width: 65%;
+    }
+}
+
+
+/* Styles spécifiques pour les tablettes */
+@media screen and (max-width: 767px) {
+    #filtres {
+        width: 100%;
+    }
+
+    #resultats {
+        width: 100%;
+    }
+}
+
+/* Styles spécifiques pour les téléphones */
+@media screen and (max-width: 480px) {
+
+    #filtres,
+    #resultats {
+        width: 100%;
+    }
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Aligne les éléments en haut */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.horaire,
+.avis {
+    flex-basis: calc(40% - 100px);
+    /* Prend 50% de la largeur avec une marge de 10px entre les deux */
+    margin-bottom: 20px;
+}
+
+.horaire {
+    margin-right: 100px;
+    /* Marge entre les deux éléments */
+
+}
+
+.separator {
+    width: 1px;
+    background-color: #fff;
+    margin: 0 100px;
+    /* Marge autour de la barre */
+}
+
+textarea {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.etoiles {
+    margin-bottom: 10px;
+}
+
+.etoile {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ccc;
+}
