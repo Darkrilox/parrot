@@ -3,10 +3,10 @@ session_start();
 if(isset($_POST['username']) && isset($_POST['password']))
 {
  // connexion à la base de données
- $db_username = 'mariadb.sys';
- $db_password = '1234';
- $db_name = 'parrot';
- $db_host = 'localhost';
+ $db_username = 'id21904202_root';
+ $db_password = 'Mohgheeb4eng&';
+ $db_name = 'id21904202_parrot';
+ $db_host = 'https://databases.000webhost.com/';
  $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
  or die('could not connect to database');
  
